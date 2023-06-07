@@ -11,6 +11,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<style>
+/* .image-with-padding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+} */
+
+/* .image-with-padding .image.fit img {
+    width: 200%;
+    height: auto;
+    object-fit: cover; 
+} */
+
+@media only screen and (max-width: 600px){
+    .image-with-padding .image.fit img {
+        width: 200%;
+    }
+}
+
+    </style>
 	<body class="is-preload"> 
 		<!--  ^^wut -->
 
@@ -45,18 +66,13 @@
 				<a href="#contact">Contact</a>
 			</div>
 		</nav>
-
-
-
 	
 		<!-- Home -->
 			<article id="home" class="wrapper style1">
 				<div class="container">
-						<!-- put padding around this?? -->
 						<div class="col-5-large col-12-medium">
 							<div class="image-with-padding"> 
-								<!-- curr padding is 150px -->
-								<span class="image fit"><img src="images/WEBSITE/Portrait_Deauville_2023.jpg" alt="" /></span>
+								<span class="image fit img"><img src="images/WEBSITE/rooms/IMG_7750.jpg" alt="" /></span>
 							</div>
 						</div>
 				
@@ -182,20 +198,18 @@
 				</div>
 			</article>
 
-	
 			<!-- About -->
 			<article id="about" class="wrapper style1">
-				<div class="container">
-						<!-- put padding around this?? -->
+				<!-- <div class="container"> -->
 						<div class="col-5-large col-12-medium">
-							<div class="selfie-with-padding"> 
-								<!-- curr padding is 150px -->
+							<div class="image-with-padding"> 
 								<span class="image fit"><img src="images/WEBSITE/LaCroisiereAuMidi_048.jpg" alt="" /></span>
 							</div>
 						</div>
 				
 					<br></br>
 					<br></br>
+				<!-- </div> -->
 					<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<h2>Ekaterina Costa</h2>
@@ -230,7 +244,6 @@
 									since 2021.</p>
 									</div>
 						</div>
-					</div>
 			</article>
 
 
