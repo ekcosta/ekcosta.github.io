@@ -1688,8 +1688,16 @@ input, select, textarea {
 		}
 
 			.image.centered img {
-				margin: 0 auto;
+				margin: auto;
 				width: auto;
+			}
+
+			@media (max-width: 600px) {
+				.image.fit {
+					display: block;
+					width: 60%; /* Increase the width to 60% to enlarge by 20% */
+					margin: 0 30em 0 -1em;
+				}
 			}
 
 /* Button */
@@ -2661,12 +2669,12 @@ input, select, textarea {
   }
   
   /* Hide the dropdown button on larger screens */
-  @media screen and (min-width: 736px) {
+  /* @media screen and (min-width: 736px) {
 	.nav-toggle {
 	  display: none;
 	}
   }
-  
+   */
   .nav-menu ul li {
 	margin-right: 1px; /* Adjust this value to your liking */
 	margin-left: 1px;  /* Adjust this value to your liking */
@@ -3011,26 +3019,8 @@ p.indented-paragraph {
 	margin-top: 2em;
 }
 
-/* Style for the image container
-.box .image.featured img {
-    width: 500%;   /* 80% width to reduce the size by 20% */
-    /* height: auto; /* maintain aspect ratio */
-    /* display: block; 
-    margin: auto; center the image */
+.image.fit img {
+    width: 100%;  /* make the image take up 100% of the width of its parent element */
+    height: auto; /* allow the height to scale proportionally */
 }
-
-/* Style for the parent container */
-/* .row { */
-    /* display: flex; /* Aligns children in a row */
-    /* justify-content: center; Distributes space evenly between the children */
-	/* padding: 0 10%; Adds padding of 20% to the left and right */ */
-}
-
-/* Style for the columns */
-/* .col-4 { */
-    /* flex: 1; Each child takes up equal space */
-	/* padding: 0% 15%; */
-/* } */ */ */
-
-
 
