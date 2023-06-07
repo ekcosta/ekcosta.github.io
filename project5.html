@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preserve My Words</title>
+    <!-- include your CSS and JS files here as needed -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <style>
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+        .slide-caption {
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        .active {
+            display: block;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .project-page header {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .project-description {
+            text-align: center;
+            margin-top: 2em;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- This is our navbar -->
+		<nav>
+			<!-- "Kathy" will be on the left side of the navbar -->
+			<!-- <div id="name">EKATERINA COSTA</div> -->
+			<div id="name">
+				<a href="index.html">EKATERINA COSTA</a>
+			</div>
+
+			<!-- These are the four main links on the right side of the navbar -->
+			<div id="links">
+				<!-- <a href="index.html#home">Home</a> -->
+				<div class="dropdown">
+					<a href="index.html#works">Works</a>
+					<!-- The dropdown menu with six sub-links under "Works" -->
+					<div class="dropdown-content">
+						<a href="project1.html">· La Traversée</a>
+						<a href="project2.html">· Nothing to Lose but the Sky</a>
+						<a href="project3.html">· The End of Winter</a>
+						<a href="project4.html">· Rooms</a>
+						<a href="project5.html">· Preserve My Words</a>
+						<a href="project6.html">· The Silent Letter</a>
+                        <a href="project7.html">· Moscow Meditations</a>
+						<a href="project8.html">· Rags</a>
+						<a href="project9.html">· you spoke to me and...</a>
+					</div>
+				</div>
+				<a href="index.html#about">About</a>
+				<a href="index.html#contact">Contact</a>
+			</div>
+		</nav>
+    <div id="project1" class="project-page">
+        <header>
+            <h2>Preserve My Words</h2>
+            <h3 class="grey-text">2020</h3>
+        </header>
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="images/WEBSITE/preserveMy/IMG_8900.jpg" alt="Project 1 image 1" style="width:100%">
+                <div class="slide-caption">Calligraphy ink and acrylic on primed canvas (30 x 40 cm each). In situ at SAMPLE Gallery's booth at Blazar Art Fair, Moscow, 2021.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/preserveMy/A8B7E70A-E294-4419-9664-0A22C93B7FFE.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">Details of "Preserve My Words", 2020. In situ at SAMPLE Gallery's booth at Blazar Art Fair, Moscow, 2021.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/preserveMy/IMG_8896.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">Details of "Preserve My Words", 2020. In situ at SAMPLE Gallery's booth at Blazar Art Fair, Moscow, 2021.</div>
+            </div>
+            <!-- you can add more images here -->
+
+            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlides(1)">&#10095;</span>
+        </div>
+        <div class="project-description">
+            <p class="indented-paragraph">The title of the piece derives from the first line of a poem by Osip Mandelshtam:
+                "Preserve my words forever for their aftertaste of misfortune and smoke..." /
+                "Сохрани мою речь навсегда за привкус несчастья и дыма...".</p>
+            <p class="indented-paragraph">Ekaterina came accross some lines from the poem copied out into a greeting
+                card addressed to her by a family friend, congratulating her with her high
+                school graduation. Searching her archives of saved greeting cards, she
+                began selecting, scanning and vectorizing pieces of poems and lyrics copied
+                out into these cards according to russian custom and tradition, gifted to her
+                by various family members and friends over the years. Transferring the now
+                unintellogble poems onto primed canvas, she preserves their words and yet
+                anonymizes them, voids them of meaning in the process.</p>
+        </div>
+        <footer>
+            <ul id="copyright" class="text-center">
+                <li>&copy; Ekaterina Costa 2023. All rights reserved.</li><li>Designed by <a href="https://www.linkedin.com/in/cameron-anderegg/" target="_blank">Cameron Anderegg</a> <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+            <br></br>
+        </footer>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>

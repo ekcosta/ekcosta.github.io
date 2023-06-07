@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rooms</title>
+    <!-- include your CSS and JS files here as needed -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <style>
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+        .slide-caption {
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        .active {
+            display: block;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .project-page header {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .project-description {
+            text-align: center;
+            margin-top: 2em;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- This is our navbar -->
+		<nav>
+			<!-- "Kathy" will be on the left side of the navbar -->
+			<!-- <div id="name">EKATERINA COSTA</div> -->
+			<div id="name">
+				<a href="index.html">EKATERINA COSTA</a>
+			</div>
+
+			<!-- These are the four main links on the right side of the navbar -->
+			<div id="links">
+				<!-- <a href="index.html#home">Home</a> -->
+				<div class="dropdown">
+					<a href="index.html#works">Works</a>
+					<!-- The dropdown menu with six sub-links under "Works" -->
+					<div class="dropdown-content">
+						<a href="project1.html">· La Traversée</a>
+						<a href="project2.html">· Nothing to Lose but the Sky</a>
+						<a href="project3.html">· The End of Winter</a>
+						<a href="project4.html">· Rooms</a>
+						<a href="project5.html">· Preserve My Words</a>
+						<a href="project6.html">· The Silent Letter</a>
+                        <a href="project7.html">· Moscow Meditations</a>
+						<a href="project8.html">· Rags</a>
+						<a href="project9.html">· you spoke to me and...</a>
+					</div>
+				</div>
+				<a href="index.html#about">About</a>
+				<a href="index.html#contact">Contact</a>
+			</div>
+		</nav>
+    <div id="project1" class="project-page">
+        <header>
+            <h2>Rooms</h2>
+            <h3 class="grey-text">2021</h3>
+        </header>
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="images/WEBSITE/rooms/IMG_8001.jpg" alt="Project 1 image 1" style="width:100%">
+                <div class="slide-caption">Series of ink drawings on cotton, gampi, washi papers. Dimensions vary. Suspended steel cables, bicycle clips, magnets. In situ at Basel Art Center, Basel, 2022.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/rooms/IMG_7996.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">Installation details from "X-Nowness" exhibition. In situ at Basel Art Center, Basel, 2022.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/rooms/IMG_7750.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">Installation details from "X-Nowness" exhibition. In situ at Basel Art Center, Basel, 2022.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/rooms/_DSC0573.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">"Rooms" series, 2021. Sumi ink gampi paper. 15 x 22 cm.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/rooms/_DSC0569.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">"Rooms" series, 2021. Sumi ink gampi paper. 15 x 22 cm.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/rooms/_DSC0585.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">"Rooms" series, 2021. Sumi ink gampi paper. 22 x 30 cm.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/rooms/_DSC0558.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">"Rooms" series, 2021. Sumi ink gampi paper. 15 x 22 cm.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/rooms/_DSC0572.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">"Rooms" series, 2021. Sumi ink gampi paper. 15 x 22 cm.</div>
+            </div>
+            <div class="slide">
+                <img src="images/WEBSITE/rooms/_DSC0591.jpg" alt="Project 1 image 2" style="width:100%">
+                <div class="slide-caption">"Rooms" series, 2021. Sumi ink gampi paper. 22 x 30 cm.</div>
+            </div>
+            <!-- you can add more images here -->
+
+            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlides(1)">&#10095;</span>
+        </div>
+        <div class="project-description">
+            <p class="indented-paragraph">The series of ink drawings made from memory, explores domesticity, the
+                concept of home and the distortions of temporality. The artist pays homage
+                to three generations of women in her family, depicting distant as well as more
+                recent memories from their homes, these emotionally charged and dense
+                personal spaces. The calligraphy-like gesture of the ink drawing on fragile,
+                iridescent gampi paper allows for an immediacy and unmistably precise line.</p>
+            <p class="indented-paragraph">The metallic, kinetic mobile installation, inspired by the "ferro-concrete" poems
+                of the Russian futurists, juxtaposes the pieces like a flow of memories from
+                the everyday life of this feminine domestic space: flowers, food, windowsills,
+                clothes and curtains... It creates a theater of distorted and manipulated
+                images, emptied of its inhabitants, confronted with the passage of time, like
+                palimpsests of memory.</p>
+            <p style="text-align: right;">Sidonie Gaychet</p>
+        </div>
+        <footer>
+            <ul id="copyright" class="text-center">
+                <li>&copy; Ekaterina Costa 2023. All rights reserved.</li><li>Designed by <a href="https://www.linkedin.com/in/cameron-anderegg/" target="_blank">Cameron Anderegg</a> <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+            <br></br>
+        </footer>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
